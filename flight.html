@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/fontcss/weather-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header class="header">
+            <nav class="navbar">
+                <div class="header">
+                    <div class="header-left">
+                        <a href="#" class="company-header-name">Temerian Airlines</a>
+                    </div>
+                    <div class="header-right">
+                        <a class="header-right-link" href="#">Pages</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="main-block">
+                <section class="flight-data">
+                    
+                    <div class="flight-data-header">
+                        <h2>This is your flight from Kaer Trolde (Skellige) to Free City of Novigrad:</h2>
+                    </div>
+
+                    <table class="flight-table">
+                        <thead class="flight-table-head">
+                            <tr class="flight-table-head-general">
+                                <th rowspan="2" class="flight-no-head">Flight no.</th>
+                                <th rowspan="2" class="flight-route-head">Route</th>
+                                <th colspan="2">Departure</th>
+                                <th rowspan="2">Duration</th>
+                                <th colspan="2">Arrival</th>
+                                <th rowspan="2">Carrier</th>
+                                <th rowspan="2">Price</th>
+                                <th rowspan="2">Buy</th>
+                            </tr>
+                            <tr class="flight-table-head-support">
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Time</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody class="flight-table-body">
+                                <tr class="flight-table-entry">
+                                    <td>SR53</td>
+                                    <td>KTR-NOV</td>
+                                    <td>10.01</td>
+                                    <td>07:30</td>
+                                    <td>7h</td>
+                                    <td>13:30</td>
+                                    <td>10.01</td>
+                                    <td>Skellige International Airlines</td>
+                                    <td>432.90 NVC</td>
+                                    <td><button class="flight-table-button buy-button">Buy</button></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                    <section class="flight-information">
+                        <ul class="flex-container flight-data-set">
+                            <li class="flex-item flight-data-entry">
+                                Now in Kaer Trolde (Skellige):<br>
+                                <span class="flight-weather">
+                                    15<i class="wi wi-celsius"></i>
+                                    <i class="wi wi-day-sunny-overcast"></i></span>
+                            </li>
+                            <li class="flex-item flight-data-entry">
+                                Now in Novigrad:<br>
+                                <span class="flight-weather">30<i class="wi wi-celsius"></i> 
+                                    <i class="wi wi-thunderstorm"></i>
+                                    <i class="wi wi-strong-wind"></i></span>
+                            </li>
+                            <li class="flex-item flight-data-entry">
+                                Aircraft model: Aep Arse 737X<br>
+                                Seats: 44<br>
+                                <img class="flight-image" src="boeing737.jpg" alt="Airplane image"/>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="flight-images-section">
+                        <!-- <h2>Flight from Kaer Trolde (Skellige) to Free City of Novigrad</h2> -->
+                        <ul class="flex-container flight-properties">
+                            <li class="flex-item flight-property">
+                                <div class="flight-image-div">
+                                    <img class="flight-image" src="ktr.jpg" alt="Kaer Trolde image">
+                                    <div class="flight-prop-info">
+                                        10.01, 07:30: Departure from Kaer Trolde
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex-item flight-property">
+                                <div class="flight-image-div">
+                                    <img class="flight-image" src="Novigrad_1.jpg" alt="Novigrad image">
+                                    <div class="flight-prop-info">
+                                        10.01, 13:30: Arrival in Novigrad
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+                </section>  
+
+            </div>
+        </main>
+        <footer class="footer">
+            Proudly brought to you by <a href="https://budrowski.com">Franciszek Budrowski</a>. Data and images on fair use. No copyright infringement intended.
+        </footer>
+    </div>
+    
+</body>
+</html>
