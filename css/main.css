@@ -70,6 +70,16 @@
     overflow: visible;
 }
 
+.header-dropbtn a{
+    transition: padding-left 2s, padding-right 2s;
+}
+
+.header-dropdown:hover .header-dropbtn a{
+    padding-left: 63px;
+    padding-right: 63px;
+    background-color: #ddd;
+}
+
 .header-dropdown:hover .header-dropdown-content{
     position: absolute;
     display: block;
