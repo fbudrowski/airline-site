@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,22 +15,73 @@
 </head>
 <body>
     <div class="content">
-        <header class="header">
-            <nav class="navbar">
-                <div class="header">
-                    <div class="header-left">
-                        <a href="#" class="company-header-name">Temerian Airlines</a>
+        <div class="header">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="header">
+                        <div class="header-left">
+                            <a href="#" class="company-header-name">Temerian Airlines</a>
+                        </div>
+                        <div class="header-right">
+                            <a class="header-right-link" href="#">Pages</a>
+                        </div>
                     </div>
-                    <div class="header-right">
-                        <a class="header-right-link" href="#">Pages</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
         <main>
+            
             <div class="main-block">
+                <section class="flight-lookup-section">
+                    <div class="flight-lookup">
+                        <div class="flight-data-header">
+                            <h2>Find your flight!</h2>
+                        </div>
+                        <div class="center-content-fake-flex">
+                            <div class="center-content-fake-flex-child">
+                                <form method="GET" onsubmit="alert('Form');">
+                                    <div class="flight-data-form">
+                                        <datalist id="airport-list">
+                                            <option value="Novigrad">
+                                            <option value="Vizima">
+                                            <option value="Kaer Morhen">
+                                            <option value="Nilfgaard City">
+                                            <option value="Kaer Trolde (Skellige)">
+                                            <option value="Cintra">
+                                            <option value="Beauclair">
+                                            <option value="Vengerberg">
+                                        </datalist>
+                                        <div class="departure-label flight-query-child">
+                                            <label for="from-input">From:</label>
+                                        </div>
+                                        <div class="departure-field flight-query-child">
+                                            <input list="airport-list" id="from-input">
+                                        </div>
+                                        <div class="arrival-label flight-query-child">
+                                            <label for="to-input">To:</label>
+                                        </div>
+                                        <div class="arrival-field flight-query-child">
+                                            <input list="airport-list" id="to-input">
+                                        </div>
+                                        <div class="time-label flight-query-child">
+                                            <label for="time-input">Date:</label>
+                                        </div>
+                                        <div class="time-field flight-query-child">
+                                            <input id="time-input" type="date">
+                                        </div>
+                                        <div class="search-field flight-query-child">
+                                            <input id="submit-query-button" class="flight-lookup-button flight-table-button" 
+                                            type="submit" value="Search!">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>    
+
                 <section class="flight-data">
-                    
+
                     <div class="flight-data-header">
                         <h2>Fly with us! Here are our flight deals:</h2>
                     </div>
@@ -58,8 +109,7 @@
                                 </tr>
                             </thead>
                             <tbody class="flight-table-body">
-                                <div class="flight-entry">
-                                    <tr class="flight-table-entry">
+                                    <tr class="flight-table-entry flight-entry">
                                         <td><a href="flight?flightno=TA1234">TA1234</a></td>
                                         <td>NOV-VIZ</td>
                                         <td>10.01</td>
@@ -72,9 +122,7 @@
                                         <td><button class="flight-table-button buy-button" onclick="">Buy</button></td>
                                         <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
                                     </tr>
-                                </div>
-                                <div class="flight-entry">
-                                    <tr class = "flight-table-entry">
+                                    <tr class = "flight-table-entry flight-entry">
                                         <td><a href="flight?flightno=NS3412">NS3412</a></td>
                                         <td>NOV-CTR</td>
                                         <td>10.01</td>
@@ -87,9 +135,7 @@
                                         <td><button class="flight-table-button buy-button">Buy</button></td>
                                         <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
                                     </tr>
-                                </div>
-                                <div class="flight-entry">
-                                    <tr class = "flight-table-entry">
+                                    <tr class = "flight-table-entry flight-entry">
                                         <td><a href="flight?flightno=NH4215">NH4215</a></td>
                                         <td>NLF-OXF</td>
                                         <td>15.01</td>
@@ -102,7 +148,6 @@
                                         <td><button class="flight-table-button buy-button">Buy</button></td>
                                         <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
                                     </tr>
-                                </div>
                             </tbody>
                         </table>
                     </div>

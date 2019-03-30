@@ -3,11 +3,8 @@
 
 .content, button{
     font-family: 'Montserrat', Helvetica, sans-serif;
+    display: grid;
 }
-/* main{
-    padding-bottom: 1000px;
-    margin-bottom: 1000px;
-} */
 
 .company-header-name{
     font-family: 'Srisakdi', cursive;
@@ -75,6 +72,7 @@
 
 
 
+
 table.flight-table{
     width: 100%;
     text-align: center;
@@ -85,23 +83,6 @@ tr.flight-table-entry{
     padding: 10px;  
     line-height: 3em;
 }
-
-
-/* Hidden entry */
-
-.checkbox-hidden{
-    display: none;
-}
-
-tr.flight-table-hidden-entry{
-    display: none;
-    background-color: #ddd;
-    padding: 10px;  
-    line-height: 3em;
-}
-
-
-
 
 tr.flight-table-entry:nth-child(even){
     background-color: #fff;
@@ -140,9 +121,7 @@ div.main-block{
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    
 }
 tr:nth-child(even) .flight-table-button{
     background-color: #ddd;
@@ -203,6 +182,77 @@ tr.flight-table-entry:hover .flight-table-button{
     width: 40%;
 }
 
+.flight-data-form{
+    position: relative;
+    vertical-align: center;
+    display: grid;
+    width: max-content;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: #ddd;
+    grid-gap: 0.3rem;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+.flight-data-form > div{
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+}
+
+.flight-query-child{
+    display: inline;
+}
+
+.departure-label{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.departure-field{
+    grid-column-start: 1;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+.arrival-label{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.arrival-field{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+.date-label{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+.date-field{
+    grid-column-start: 3;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+.search-field{
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    margin-bottom: 10px;
+}
+
+.flight-lookup-button{
+    padding: 10px 30px;
+}
+
 
 .flight-image{
     position: relative;
@@ -215,7 +265,6 @@ tr.flight-table-entry:hover .flight-table-button{
 
 .flight-image:hover{
     transform: scale(1.75);
-     /* translate(50vh, 50vw); */
     z-index: 100;
 }
 
@@ -231,4 +280,13 @@ tr.flight-table-entry:hover .flight-table-button{
 }
 .flight-weather{
     font-size: 3em;
+}
+
+
+.center-content-fake-flex{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
 }
