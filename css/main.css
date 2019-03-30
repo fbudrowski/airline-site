@@ -1,7 +1,7 @@
 
 * {box-sizing: border-box;}
 
-.content, button{
+.content, button, .flight-table-button{
     font-family: 'Montserrat', Helvetica, sans-serif;
     display: grid;
 }
@@ -10,12 +10,13 @@
     font-family: 'Srisakdi', cursive;
     font-size: 2em;
     font-weight: bold;
+    margin-right: 30px;
 }
 
 .header{
     position: relative;
     margin: 0;
-    overflow: hidden;
+    overflow: visible;
     background-color: #fff;
     padding: 5px 5x 5px 5px;
     border-radius: 10px;
@@ -34,11 +35,50 @@
 }
 .header-right{
     float: right;
+}
+.header-left{
+    float: left;
+}
+
+.header-link{
     padding: 12px;
     text-decoration: none;
     font-size: 18px; 
     line-height: 25px;
     border-radius: 10px;
+}
+
+
+
+.header-dropbtn{
+  border: none;
+  cursor: pointer;
+  height: inherit;
+}
+
+.header-dropdown{
+    position: relative;
+    display: block;
+    height: inherit;
+}
+
+.header-dropdown-content{
+    display: none;
+    position: relative;
+    height: inherit;
+
+    background-color: #ddd;
+    overflow: visible;
+}
+
+.header-dropdown:hover .header-dropdown-content{
+    position: absolute;
+    display: block;
+    right: 0px;
+    top: 0px;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 35px 0px;
 }
 
 
@@ -290,3 +330,4 @@ tr.flight-table-entry:hover .flight-table-button{
     height:100%;
     width:100%;
 }
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +14,63 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <script src="main.js"></script>
 </head>
+
 <body>
-    <div class="content">
-        <div class="header">
-            <header class="header">
-                <nav class="navbar">
-                    <div class="header">
-                        <div class="header-left">
-                            <a href="#" class="company-header-name">Temerian Airlines</a>
-                        </div>
-                        <div class="header-right">
-                            <a class="header-right-link" href="#">Pages</a>
+    <div class="content"><div class="header">
+        <header class="header">
+            <nav class="navbar">
+                <div class="header">
+                    <div class="header-left">
+                        <a href="#" class="company-header-name">Temerian Airlines</a>
+                    </div>
+                    <div class="header-left header-link">
+                        <a href="#" class="header-left-link">Book</a>
+                    </div>
+                    <div class="header-left header-link">
+                        <a href="#" class="header-left-link">Before the flight</a>
+                    </div>
+                    <div class="header-left header-link">
+                        <a href="#" class="header-left-link">After the flight</a>
+                    </div>
+                    <div class="header-right header-link">
+                        <div class="header-dropdown">
+                            <div class="header-dropbtn">
+                                <a class="header-right-link" href="#">Log in</a>
+                            </div>
+    
+                            <div class="header-dropdown-content">
+                                <form method="POST">
+                                    <div class="login-form-entry">
+                                        <label for="email-login">Email:</label>
+                                    </div>
+                                    <div class="login-form-entry">
+                                        <input type="email" id="email-login">
+                                    </div>
+                                    <div class="login-form-entry">
+                                        <label for="password-login">Password:</label>
+                                    </div>
+                                    <div class="login-form-entry">
+                                        <input type="password" id="password-login">
+                                    </div>
+                                    <div class="login-form-entry">
+                                        <input type="submit" class="flight-table-button" value="Log in!">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </header>
-        </div>
+                    <div class="header-right header-link">
+                        <a class="header-right-link" href="#">Register</a>
+                    </div>
+                    <div class="header-right header-link">
+                        <a class="header-right-link" href="#">Change currency</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
         <main>
-            
+
             <div class="main-block">
                 <section class="flight-lookup-section">
                     <div class="flight-lookup">
@@ -70,15 +110,16 @@
                                             <input id="time-input" type="date">
                                         </div>
                                         <div class="search-field flight-query-child">
-                                            <input id="submit-query-button" class="flight-lookup-button flight-table-button" 
-                                            type="submit" value="Search!">
+                                            <input id="submit-query-button"
+                                                class="flight-lookup-button flight-table-button" type="submit"
+                                                value="Search!">
                                         </div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
-                </section>    
+                </section>
 
                 <section class="flight-data">
 
@@ -109,45 +150,48 @@
                                 </tr>
                             </thead>
                             <tbody class="flight-table-body">
-                                    <tr class="flight-table-entry flight-entry">
-                                        <td><a href="flight?flightno=TA1234">TA1234</a></td>
-                                        <td>NOV-VIZ</td>
-                                        <td>10.01</td>
-                                        <td>12:30</td>
-                                        <td>1h</td>
-                                        <td>13:30</td>
-                                        <td>10.01</td>
-                                        <td>Temerian Airlines</td>
-                                        <td>43.90 NVC</td>
-                                        <td><button class="flight-table-button buy-button" onclick="">Buy</button></td>
-                                        <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
-                                    </tr>
-                                    <tr class = "flight-table-entry flight-entry">
-                                        <td><a href="flight?flightno=NS3412">NS3412</a></td>
-                                        <td>NOV-CTR</td>
-                                        <td>10.01</td>
-                                        <td>11:30</td>
-                                        <td>0:30h</td>
-                                        <td>12:00</td>
-                                        <td>10.01</td>
-                                        <td>Novigrad Southern</td>
-                                        <td>15.34 NVC</td>
-                                        <td><button class="flight-table-button buy-button">Buy</button></td>
-                                        <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
-                                    </tr>
-                                    <tr class = "flight-table-entry flight-entry">
-                                        <td><a href="flight?flightno=NH4215">NH4215</a></td>
-                                        <td>NLF-OXF</td>
-                                        <td>15.01</td>
-                                        <td>01:30</td>
-                                        <td>14h</td>
-                                        <td>15:30</td>
-                                        <td>15.01</td>
-                                        <td>Nilfhansa</td>
-                                        <td>4322.90 NIF</td>
-                                        <td><button class="flight-table-button buy-button">Buy</button></td>
-                                        <td><button class="flight-table-button detail-button" onclick="">Details</button></td>
-                                    </tr>
+                                <tr class="flight-table-entry flight-entry">
+                                    <td><a href="flight?flightno=TA1234">TA1234</a></td>
+                                    <td>NOV-VIZ</td>
+                                    <td>10.01</td>
+                                    <td>12:30</td>
+                                    <td>1h</td>
+                                    <td>13:30</td>
+                                    <td>10.01</td>
+                                    <td>Temerian Airlines</td>
+                                    <td>43.90 NVC</td>
+                                    <td><button class="flight-table-button buy-button" onclick="">Buy</button></td>
+                                    <td><button class="flight-table-button detail-button" onclick="">Details</button>
+                                    </td>
+                                </tr>
+                                <tr class="flight-table-entry flight-entry">
+                                    <td><a href="flight?flightno=NS3412">NS3412</a></td>
+                                    <td>NOV-CTR</td>
+                                    <td>10.01</td>
+                                    <td>11:30</td>
+                                    <td>0:30h</td>
+                                    <td>12:00</td>
+                                    <td>10.01</td>
+                                    <td>Novigrad Southern</td>
+                                    <td>15.34 NVC</td>
+                                    <td><button class="flight-table-button buy-button">Buy</button></td>
+                                    <td><button class="flight-table-button detail-button" onclick="">Details</button>
+                                    </td>
+                                </tr>
+                                <tr class="flight-table-entry flight-entry">
+                                    <td><a href="flight?flightno=NH4215">NH4215</a></td>
+                                    <td>NLF-OXF</td>
+                                    <td>15.01</td>
+                                    <td>01:30</td>
+                                    <td>14h</td>
+                                    <td>15:30</td>
+                                    <td>15.01</td>
+                                    <td>Nilfhansa</td>
+                                    <td>4322.90 NVC</td>
+                                    <td><button class="flight-table-button buy-button">Buy</button></td>
+                                    <td><button class="flight-table-button detail-button" onclick="">Details</button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -156,9 +200,11 @@
             </div>
         </main>
         <footer class="footer">
-                Proudly brought to you by <a href="https://budrowski.com">Franciszek Budrowski</a>. Data and images on fair use. No copyright infringement intended.
+            Proudly brought to you by <a href="https://budrowski.com">Franciszek Budrowski</a>. Data and images on fair
+            use. No copyright infringement intended.
         </footer>
     </div>
-    
+
 </body>
+
 </html>

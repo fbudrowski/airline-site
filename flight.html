@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,24 +14,67 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <script src="main.js"></script>
 </head>
+
 <body>
     <div class="content">
-        <header class="header">
-            <nav class="navbar">
-                <div class="header">
-                    <div class="header-left">
-                        <a href="#" class="company-header-name">Temerian Airlines</a>
+
+        <div class="header">
+            <header class="header">
+                <nav class="navbar">
+                    <div class="header">
+                        <div class="header-left">
+                            <a href="#" class="company-header-name">Temerian Airlines</a>
+                        </div>
+                        <div class="header-left header-link">
+                            <a href="#" class="header-left-link">Book</a>
+                        </div>
+                        <div class="header-left header-link">
+                            <a href="#" class="header-left-link">Before the flight</a>
+                        </div>
+                        <div class="header-left header-link">
+                            <a href="#" class="header-left-link">After the flight</a>
+                        </div>
+                        <div class="header-right header-link">
+                            <div class="header-dropdown">
+                                <div class="header-dropbtn">
+                                    <a class="header-right-link" href="#">Log in</a>
+                                </div>
+
+                                <div class="header-dropdown-content">
+                                    <form method="POST">
+                                        <div class="login-form-entry">
+                                            <label for="email-login">Email:</label>
+                                        </div>
+                                        <div class="login-form-entry">
+                                            <input type="email" id="email-login">
+                                        </div>
+                                        <div class="login-form-entry">
+                                            <label for="password-login">Password:</label>
+                                        </div>
+                                        <div class="login-form-entry">
+                                            <input type="password" id="password-login">
+                                        </div>
+                                        <div class="login-form-entry">
+                                            <input type="submit" class="flight-table-button" value="Log in!">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right header-link">
+                            <a class="header-right-link" href="#">Register</a>
+                        </div>
+                        <div class="header-right header-link">
+                            <a class="header-right-link" href="#">Change currency</a>
+                        </div>
                     </div>
-                    <div class="header-right">
-                        <a class="header-right-link" href="#">Pages</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+                </nav>
+            </header>
+        </div>
         <main>
             <div class="main-block">
                 <section class="flight-data">
-                    
+
                     <div class="flight-data-header">
                         <h2>This is your flight from Kaer Trolde (Skellige) to Novigrad:</h2>
                     </div>
@@ -55,18 +99,18 @@
                             </tr>
                         </thead>
                         <tbody class="flight-table-body">
-                                <tr class="flight-table-entry">
-                                    <td>SR53</td>
-                                    <td>KTR-NOV</td>
-                                    <td>10.01</td>
-                                    <td>07:30</td>
-                                    <td>7h</td>
-                                    <td>13:30</td>
-                                    <td>10.01</td>
-                                    <td>Skellige International Airlines</td>
-                                    <td>432.90 NVC</td>
-                                    <td><button class="flight-table-button buy-button">Buy</button></td>
-                                </tr>
+                            <tr class="flight-table-entry">
+                                <td>SR53</td>
+                                <td>KTR-NOV</td>
+                                <td>10.01</td>
+                                <td>07:30</td>
+                                <td>7h</td>
+                                <td>13:30</td>
+                                <td>10.01</td>
+                                <td>Skellige International Airlines</td>
+                                <td>432.90 NVC</td>
+                                <td><button class="flight-table-button buy-button">Buy</button></td>
+                            </tr>
                         </tbody>
                     </table>
                     <section class="flight-information">
@@ -79,14 +123,16 @@
                             </li>
                             <li class="flex-item flight-data-entry">
                                 Now in Novigrad:<br>
-                                <span class="flight-weather">30<i class="wi wi-celsius"></i> 
+                                <span class="flight-weather">30<i class="wi wi-celsius"></i>
                                     <i class="wi wi-thunderstorm"></i>
                                     <i class="wi wi-strong-wind"></i></span>
                             </li>
                             <li class="flex-item flight-data-entry">
                                 Aircraft model: Aep Arse 737X<br>
                                 Seats: 44<br>
-                                <img class="flight-image" src="https://i1.wp.com/upload.wikimedia.org/wikipedia/commons/6/61/Air_Berlin_737-76Q_D-ABBN_ZRH_0921739.jpg" alt="Airplane image"/>
+                                <img class="flight-image"
+                                    src="https://i1.wp.com/upload.wikimedia.org/wikipedia/commons/6/61/Air_Berlin_737-76Q_D-ABBN_ZRH_0921739.jpg"
+                                    alt="Airplane image" />
                             </li>
                         </ul>
                     </section>
@@ -95,7 +141,9 @@
                         <ul class="flex-container flight-properties">
                             <li class="flex-item flight-property">
                                 <div class="flight-image-div">
-                                    <img class="flight-image" src="https://vignette.wikia.nocookie.net/witcher/images/f/f0/Castle_of_Kaer_Trolde.jpg/revision/latest/scale-to-width-down/1000?cb=20160131180451" alt="Kaer Trolde image">
+                                    <img class="flight-image"
+                                        src="https://vignette.wikia.nocookie.net/witcher/images/f/f0/Castle_of_Kaer_Trolde.jpg/revision/latest/scale-to-width-down/1000?cb=20160131180451"
+                                        alt="Kaer Trolde image">
                                     <div class="flight-prop-info">
                                         10.01, 07:30: Departure from Kaer Trolde
                                     </div>
@@ -103,7 +151,9 @@
                             </li>
                             <li class="flex-item flight-property">
                                 <div class="flight-image-div">
-                                    <img class="flight-image" src="https://vignette.wikia.nocookie.net/wiedzmin/images/3/3c/Novigrad_1.jpg/revision/latest/scale-to-width-down/1000?cb=20160626133757" alt="Novigrad image">
+                                    <img class="flight-image"
+                                        src="https://vignette.wikia.nocookie.net/wiedzmin/images/3/3c/Novigrad_1.jpg/revision/latest/scale-to-width-down/1000?cb=20160626133757"
+                                        alt="Novigrad image">
                                     <div class="flight-prop-info">
                                         10.01, 13:30: Arrival in Novigrad
                                     </div>
@@ -112,14 +162,16 @@
                         </ul>
                     </section>
 
-                </section>  
+                </section>
 
             </div>
         </main>
         <footer class="footer">
-            Proudly brought to you by <a href="https://budrowski.com">Franciszek Budrowski</a>. Data and images on fair use. No copyright infringement intended.
+            Proudly brought to you by <a href="https://budrowski.com">Franciszek Budrowski</a>. Data and images on fair
+            use. No copyright infringement intended.
         </footer>
     </div>
-    
+
 </body>
+
 </html>
