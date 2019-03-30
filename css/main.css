@@ -3,7 +3,6 @@
 
 .content, button, .flight-table-button{
     font-family: 'Montserrat', Helvetica, sans-serif;
-    display: grid;
 }
 
 .company-header-name{
@@ -289,8 +288,10 @@ tr.flight-table-entry:hover .flight-table-button{
     margin-bottom: 10px;
 }
 
+
 .flight-lookup-button{
     padding: 10px 30px;
+    width: max-content;
 }
 
 
